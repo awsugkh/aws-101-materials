@@ -185,7 +185,7 @@
 
 	<script>
 		// Call API
-		fetch('https://jlzpac634kimkultt4sqbwggha0npzex.lambda-url.ap-southeast-1.on.aws/').then(async (res) => {
+		fetch('api-url').then(async (res) => {
 			const result = await res.json();
 			document.querySelector('#catTime').innerHTML = result.time;
 			document.querySelector('#catFact').innerHTML = result.fact;
